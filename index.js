@@ -23,7 +23,7 @@ app.use(express.static('public'));
 app.engine('handlebars', hbs());
 app.set('view engine', 'handlebars');
 
-app.get('/', function(request,response){
+app.get('/tienda', function(request,response){
     const collection= db.collection('productos');
     collection.find({}).toArray(function(err,docs){
         if(err){
@@ -40,6 +40,25 @@ app.get('/', function(request,response){
 
 });
 
+app.get('/descripcion',function(request,response){
+    const collection= db.collection('productos');
+    collection.find({
+        title: {
+            '$eq': request.query.producto
+        }
+    }).toArray(function(err,docs){
+        if(err){
+            console.error(err);
+            response.send(err);
+            return;
+        }
+        var contexto={
+        products: docs,
+    };
+   response.render('descrip', contexto);
+
+});
+});
 
 app.get('/agregarDocumento',function(request,response){
     const collection= db.collection('productos');

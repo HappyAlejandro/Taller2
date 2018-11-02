@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" media="screen" href="/styles/descrip.css" />
+    <title>Document</title>
+</head>
+<body>
+    <body>
+    <header class="header">
+        <nav class="header__nav"> 
+                <section class="navigation__logo">
+                        <img src="/img/logo.png" alt="" width="90%">
+                    </section>
+                    <section class="navigation__links">
+                        <a href="">About  </a>
+                        <a href="">Seasons  </a>
+                        <a href="">  Cast  </a>
+                        <a href="">News </a>
+                        <a href=""> Shop  </a>
+                    </section>
+
+        </nav>    
+    </header>
+
+    
+    <section class="filter">
+       
+            <section class="filter__links">
+                <a href="">Ropa  </a>
+                <a href="">Accesorios  </a>
+                <a href="">  Coleccionables  </a>
+                <a href="">Juegos </a>
+                <a href=""> Libros y DvDs  </a>
+            </section>
+       
+        
+    </section>
+
+    {{#each products}}
+    <img src="{{img}}" alt="">
+    
+    {{/each}}
+
+
+
+    <section class="registration">
+        <div class="registration__info">
+            <h5>
+                Enter the game of thrones
+            </h5>
+<p>Subscribe now, so as not to miss new information about game of thrones about</p>
+        </div>
+
+        <div class="registration__input">
+
+            <input type="">
+
+            <button>Send</button>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+
+        <section class="footer__general">
+                <section class="footer__logo">
+                        <img src="./img/logo.png" alt="" width="90%">
+                    </section>
+                    <section class="footer__links">
+                        <a href="">About  </a>
+                        <a href="">Seasons  </a>
+                        <a href="">  Cast  </a>
+                        <a href="">News </a>
+                        <a href=""> Shop  </a>
+                    </section>
+    
+        </section>
+         
+                <section class="footer__icons">
+                        <img src="./img/logoHbo.png" alt="" width="80%">
+                </section>
+                
+
+    </footer>
+    <script>"descrip.js"</script>
+</body>
+</html>
