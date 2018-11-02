@@ -25,25 +25,23 @@
         </nav>    
     </header>
 
-    
-    <section class="filter">
-       
-            <section class="filter__links">
-                <a href="">Ropa  </a>
-                <a href="">Accesorios  </a>
-                <a href="">  Coleccionables  </a>
-                <a href="">Juegos </a>
-                <a href=""> Libros y DvDs  </a>
-            </section>
-       
-        
-    </section>
+    <section class="information">
 
-    {{#each products}}
-    <img src="{{img}}" alt="">
     
+   {{#each products}}
+    <img class="information__img" src="{{img}}" alt="">
+    
+    <div class="information__info">
+        <h2>{{title}}</h2>
+        <p><strong>Detalles:</strong>{{details}}</p>
+        <p><strong>Precio:$</strong>{{price}}</p>
+        <button>Añadir al carrito</button>
+    </div>
     {{/each}}
 
+    </section>
+
+ 
 
 
     <section class="registration">
@@ -67,7 +65,7 @@
 
         <section class="footer__general">
                 <section class="footer__logo">
-                        <img src="./img/logo.png" alt="" width="90%">
+                        <img src="/img/logo.png" alt="" width="90%">
                     </section>
                     <section class="footer__links">
                         <a href="">About  </a>
@@ -80,7 +78,7 @@
         </section>
          
                 <section class="footer__icons">
-                        <img src="./img/logoHbo.png" alt="" width="80%">
+                        <img src="/img/logoHbo.png" alt="" width="80%">
                 </section>
                 
 

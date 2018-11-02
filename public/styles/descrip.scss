@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700" rel="stylesheet');
+
+body {
+ margin: 0;
+ padding: 0;
+ font-family: 'Montserrat',sans-serif;
+ font-size: 18px;
+ background-color: white;
+}
+
+.header{
+
+    &__nav{
+        width: 100%;
+        background: black;
+        height: 100px;
+         
+        display: flex;
+        flex-direction: row;
+      
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content:  stretch;
+        align-items: center;
+
+       .navigation__logo{
+            margin-left: 180px;
+            order: 0;
+            flex: 0 1 auto;
+            align-self: auto;
+    
+        }
+         
+
+    .navigation__links{
+        order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
+        width: 530px;
+        margin-right: 250px;
+        margin-bottom: 10px;
+
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content:  stretch;
+        align-items: center;
+
+        a{
+            order: 0;
+            flex: 0 1 auto;
+            align-self: auto;
+            color: white;
+            font-weight: 300;
+           
+            
+        
+        }
+        a:link{
+            text-decoration: none;
+          
+            
+        }
+    }
+    
+    }
+ 
+}
+
+.information{
+
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    align-items: flex-start;
+
+    &__img{
+        margin-top: 25px;
+        box-shadow: 5px 5px 10px #dedede;
+        margin-right: 25px;
+        width: 500px;
+        height: 500px;
+        order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
+    }
+
+    &__info{
+        width: 500px;
+        margin-left: 25px;
+        order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
+
+
+        h2{
+            font-size: 45px;
+            margin-top: 25px;
+            margin-bottom: 55px;
+           
+        }
+
+        p{
+            font-size: 23px;
+            margin-top: 25px;
+        }
+
+        button{
+            margin-top: 15px;
+            background: black;
+            color: white;
+            border-radius: 15px;
+            padding: 15px;
+            font-size: 14px;
+            font-family: inherit;
+            border: none;
+        }
+    }
+
+}
+
+
+
+.registration{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    justify-content: center;
+    padding-bottom: 80px;
+    align-content: stretch;
+    align-items: center;
+    background-color: white;
+
+    h5{
+        font-size: 24px;
+        padding: 0;
+        margin: 0;
+    }
+
+    p{
+        font-size: 17px;
+    }
+
+    &__info{
+        margin-top: 80px;
+        width: 400px;
+        order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
+    }
+
+    &__input{
+        order: 0;
+        margin-top: 60px;
+        flex: 0 1 auto;
+        align-self: auto;
+
+
+        input{
+            width: 500px;
+            height: 40px;
+            background-color: #d3d3d3;
+        }
+        button{
+            background: black;
+            color: white;
+            border-radius: 15px;
+            padding: 15px;
+            font-size: 16px;
+            font-family: inherit;
+            border: none;
+        }
+    }
+}
+
+
+.footer{
+    background-color: black;
+
+    
+    &__general{
+        width: 100%;
+        height: 120px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: row;
+        z-index: 100;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content:  stretch;
+        align-items: center;
+
+        .footer__logo{
+            margin-left: 180px;
+            order: 0;
+            flex: 0 1 auto;
+            align-self: auto;
+        
+        }
+        
+        .footer__links{
+            order: 0;
+            flex: 0 1 auto;
+            align-self: auto;
+            width: 530px;
+            margin-right: 250px;
+            margin-bottom: 10px;
+        
+        
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content:  stretch;
+            align-items: center;
+        
+            a{
+                order: 0;
+                flex: 0 1 auto;
+                align-self: auto;
+                color: #f4f4f4;
+                font-weight: 300;
+               
+                
+            
+            }
+            a:link{
+                text-decoration: none;
+              
+                
+            }
+        }
+    }
+   
+
+
+
+&__icons{
+margin-left: 700px;
+width: 100px;
+}
+
+}
+
+
+
+
