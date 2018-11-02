@@ -68,7 +68,7 @@ body {
     }
  
 }
-
+/*
 .banner {
     .banner__info{
         position: absolute;
@@ -433,6 +433,69 @@ padding-bottom: 50px;
         align-self: auto;
     }
 }
+*/
+.products{ 
+    width: 1100px;
+    margin-left: 190px;
+    margin-top: 50px;
+    
+    &__list{
+        display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content:center;
+    align-items: center;
+   
+
+        &__container{
+        box-shadow: 5px 5px 10px #dedede;
+        width: 300px;
+        order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
+        margin: 20px;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+    &__info{
+        width: 300px;
+        background: #f7f7f7;
+     &__titulo{
+        margin-top: 15px;
+        padding-left: 15px;
+        margin-bottom: 0px;
+        order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
+ 
+      
+       
+    }
+
+    &__precio{
+        margin-top: 15px;
+        order: 0;
+        flex: 0 1 auto;
+        padding-left: 15px;
+        align-self: auto;
+    }
+}
+       
+       
+           
+  
+        
+        }
+    }
+}
+
+
+
 
 .registration{
     display: flex;
@@ -557,11 +620,12 @@ width: 100px;
 
 }
 .filter{
-    margin-top: 20px;
+    margin-top: 50px;
+    box-shadow: 5px 5px 10px #dedede;
     width: 1100px;
     height: 50px;;
     margin-left: 190px;
-  
+    border-radius: 15px;
     background: #efefef;
 
         display: flex;
@@ -573,12 +637,13 @@ width: 100px;
         align-items: center;
 
         
-        .filter__links{
+        &__links{
+            margin-left: 20px;
             order: 0;
             flex: 0 1 auto;
             align-self: auto;
-            width: 530px;
-            margin-right: 250px;
+            width: 630px;
+            
             
 
             display: flex;
@@ -589,6 +654,7 @@ width: 100px;
             align-items: center;
     
             a{
+                margin-right: 30px;
                 order: 0;
                 flex: 0 1 auto;
                 align-self: auto;
