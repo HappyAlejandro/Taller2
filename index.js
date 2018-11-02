@@ -23,6 +23,9 @@ app.use(express.static('public'));
 app.engine('handlebars', hbs());
 app.set('view engine', 'handlebars');
 
+
+var produc= require('./productos');
+
 app.get('/tienda', function(request,response){
     const collection= db.collection('productos');
     collection.find({}).toArray(function(err,docs){
@@ -74,6 +77,20 @@ app.get('/agregarDocumento',function(request,response){
         response.send('documento agregado');
     });
 
+});
+
+var carrito=[];
+app.post('/api/Carrito', function(req, res){
+
+    let titulo = req.body.titulo;
+    let producto = produc.find(function(elem){
+        if(elem.titulo == titulo){
+            return true;
+        }
+    });
+
+    carrito.push(producto);
+    res.send(carrito);
 });
 
 

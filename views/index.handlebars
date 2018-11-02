@@ -20,7 +20,10 @@
                         <a href="">  Cast  </a>
                         <a href="">News </a>
                         <a href=""> Shop  </a>
+                        
                     </section>
+
+                
 
         </nav>    
     </header>
@@ -213,8 +216,9 @@
                 <a href="">  Coleccionables  </a>
                 <a href="">Juegos </a>
                 <a href=""> Libros y DvDs  </a>
+           
             </section>
-       
+            <p class="carrito">Carrito</p>
         
     </section>
 
@@ -226,8 +230,9 @@
             <div class="products__list__container" >
                  <img class="imagen" data-titulo= "{{title}}"   src="{{img}}" alt="" width="100%" height="300px">
                  <div class="products__list__container__info">
-                    <p class="products__list__container__info__titulo">{{title}}</p>
-                    <p class="products__list__container__info__precio"><strong>Precio:</strong>${{price}}</p> 
+                    <p data-titulo="{{title}}" class="products__list__container__info__titulo">{{title}}</p>
+                    <p data-price="{{price}}" class="products__list__container__info__precio"><strong>Precio:</strong>${{price}}</p> 
+                    <button class="products__list__container__info__boton">Añadir al carrito</button>
                  </div>
             </div>
            

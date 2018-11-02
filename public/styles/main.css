@@ -797,4 +797,17 @@ padding-bottom: 50px;
 .filter__links a:link {
   text-decoration: none;
 }
+
+.filter__links__carrito {
+  margin-left: 20px;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  -ms-flex-item-align: auto;
+      -ms-grid-row-align: auto;
+      align-self: auto;
+}
 /*# sourceMappingURL=main.css.map */
